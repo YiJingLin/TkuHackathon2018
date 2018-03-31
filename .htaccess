@@ -4,10 +4,10 @@ Options +FollowSymlinks
 RewriteEngine on
 
 # map neat URL to internal URL
-RewriteRule ^/ public/index.html [nc]
+RewriteRule ^./ ./public/index.html [nc]
 
 <Files ~ "^\.(htaccess|htpasswd)$">
-deny from all
+	deny from all
 </Files>
 Options -Indexes
 DirectoryIndex RestController.php?view=all       
