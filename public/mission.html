@@ -27,7 +27,13 @@
     <!-- popper.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
  
-    
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+
   </head>
   <body id="top">
     <!-- Header -->
@@ -69,10 +75,10 @@
                   <div class="input-group mb-3">
                     <input type="text" name="address" class="form-control border-input" placeholder="活動地址" value="新北市淡水區英專路151號" readonly="readonly">
                     <div class="input-group-append">
-                      <button class="btn btn-outline-secondary" type="button" disabled>Search on google map</button>
+                      <button class="btn btn-outline-secondary" type="button" onclick="marking()" disabled>Search on google map</button>
                     </div>
                   </div>
-                  <div>顯示 google map</div>
+                  <div id="map"></div>
                 </div>
               </div>
             </div>
@@ -123,13 +129,13 @@
                 </div>
             </div>
             <div class="text-center">
-              <a href="#" class="button">資料編輯</a>
-              <a href="#" class="button">取消編輯</a>
-              <a href="#" class="button">確認送出</a>
+              <a href="#" class="button" style="display:none">資料編輯</a>
+              <a href="#" class="button" style="display:none">取消編輯</a>
+              <a href="#" class="button" style="display:none">確認送出</a>
             </div>
           </section>
       </div>
-      
+
         </div>
       </div>
     </div>
@@ -141,6 +147,7 @@
       <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
       <script src="assets/js/main.js"></script>
       <script src="assets/js/mission.js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZcwhzVh5o0xJZMvoH2Ynmzobf1-PJlWg&callback=initMap"></script>
 
       <script type="text/javascript">
         function enableList(){
