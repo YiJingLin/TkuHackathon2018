@@ -1,27 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style type="text/css">
-      html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
-    </style>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6tYFn2qE9DU8VfjvYkpXaWiclI3zfBkk  ">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: { lat: -34.397, lng: 150.644},
-          zoom: 8
-        };
-        var map = new google.maps.Map(
-            document.getElementById('map-canvas'),
-            mapOptions);
-      }
-      google.maps.event.addDomListener(
-          window, 'load', initialize);
-    </script>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./assest/css/main.css">
   </head>
   <body>
-<div id="map-canvas"></div>3
+    <div id="map"></div>
+    <script type="text/javascript" src="./assest/js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6tYFn2qE9DU8VfjvYkpXaWiclI3zfBkk&callback=initMap">
+    </script>
   </body>
 </html>
