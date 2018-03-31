@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>個人資料</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+
+	<body style="background-image: url('./assets/img/profile_bg.png');">
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+
+	    <div class="container" style="height:1000px; width:70%; background-color: black; opacity: 0.5;">
+	    </div>
+		<div class="container" style="width:699px; position:relative; top:-1000px; left:20px;">
+			<div class="row">
+				<div class="col-md-4" style="z-index: 1;">
+					<img id="img_photo" src="./assets/img/img_photo.jpg" class="rounded mx-auto d-block" style="margin-top: 2em; width:100%; border-radius: 50%!important;border: 5px solid #f2f2f2;">
+				</div>
+				<div class="col-md-8" style="background-color: #e6e6e6; position: relative; margin-top:100px; left:-135px;z-index:0;height:820px; border-radius: 2%">
+					<div style="position: relative;top:10px; left: 120px;">	
+						<div><h1 style="color: #262626;">神の領域<h1></div>
+						<div>
+							<div class="row" style="">
+								<div class="col-md-5"><h4 style="color: #595959;">性別&emsp;男<h4></div>
+								<div class="col-md-7" style="text-align:left; left:-30px"><h4 style="color: #595959;">Lv.&emsp;87<h4></div>	
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-3"></div>
+						<div class="col-md-3">
+							<div class="btn-group" role="group" aria-label="Basic example" style="margin-top: 60px;width:100%">
+							  <button type="button" class="btn btn-secondary" id="user_btn">&nbsp;個人資訊&nbsp;</button>
+							  <button type="button" class="btn btn-secondary" id="adventure_btn">冒險者資訊</button>
+							</div>
+						</div>
+					</div>
+
+					<div id="user_profile" style="margin-top: 30px; padding:0px 10px 0px 10px;">
+						<form>
+						  <div class="form-group row">
+						    <label for="staticEmail" class="col-sm-2 col-form-label">信箱</label>
+						    <div class="col-sm-10">
+						      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="chen.wei-ming@nctu.edu.tw">
+						    </div>
+						  </div>
+						  <div class="form-group row">
+						    <label for="static mobile" class="col-sm-2 col-form-label">手機</label>
+						    <div class="col-sm-10">
+						      <input type="text" readonly class="form-control-plaintext" id="static mobile" value="0987-987-987">
+						    </div>
+						  </div>
+						  <div class="form-group row">
+						    <label for="static address" class="col-sm-2 col-form-label">密碼</label>
+						    <div class="col-sm-10">
+						      <input type="text" readonly class="form-control-plaintext" id="static address" value="新竹市東區大學路81巷3弄**號">
+						    </div>
+						  </div>
+						  <div class="form-group row">
+					    	<label for="static address" class="col-sm-12 col-form-label">自我介紹</label>
+					    	<div class="col-sm-1"></div>
+						    <div class="col-sm-11">
+							  <textarea class="form-control" aria-label="With textarea" style="height:200px">大家豪，我是剛從新手村畢業的冒險者，請各位先進多多指教～姆咪。</textarea>
+						    </div>
+						  </div>
+						</form>
+					</div>
+
+					<div id="adventure_profile" hidden=true style="margin-top: 30px;">
+						<div class="row">
+							  <div class="col-md-1">
+							  	<img src="./assets/img/steak.svg" style="position: relative; top: -10px; width:30px; margin:0px 10px 0px 10px;">
+							  </div>
+							  <div class="col-md-3"><h5 style="position: relative; top: -5px; color: #4d4d4d;">&nbsp;&nbsp;&nbsp;經驗值</h5></div>
+							  <div class="col-md-7">
+							  	<div class="progress">
+								  <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+								</div>
+							  </div>
+							  <div class="col-md-1">
+  							  	<h5 style="position: relative; top: -5px; color: #4d4d4d;left:-100px">70%</h5>
+  							  </div>
+						  </div>
+
+						  <div class="row" style="height:10px"></div>
+						  
+						  <div class="row">
+							  <div class="col-md-1">
+							  	<img src="./assets/img/money-bag.svg" style="position: relative; top: -10px; width:30px; margin:0px 10px 0px 10px;">
+							  </div>
+							  <div class="col-md-3"><h5 style="position: relative; top: -5px; color: #4d4d4d;">&nbsp;&nbsp;&nbsp;點數</h5></div>
+							  <div class="col-md-7">
+							  	<div class="progress">
+								  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
+								</div>
+							  </div>
+  							  <div class="col-md-1">
+  							  	<h5 style="position: relative; top: -5px; color: #4d4d4d;left:-100px">45pt</h5>
+  							  </div>
+						  </div>
+						  <div class="row" style="margin-top: 30px">
+								<div class="col-md-2"></div>
+								<div class="col-md-8">
+							  		<canvas id="myChart" width="400" height="400"></canvas>
+							  	</div>
+							  	<div class="col-md-2"></div>
+						  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var img_flag = true;
+
+			$("#img_photo").click(function() {
+				if(img_flag){
+					$(this).attr("src","./assets/img/user1.gif");
+					img_flag=false;
+				}else{
+					$(this).attr("src","./assets/img/img_photo.jpg");
+					img_flag=true;
+				};
+			});
+
+			$("#img_skin").click(function() {
+			  $("#img_photo").css("display","block !important;");
+			  $("#img_skin").css("display","none !important;");
+			});
+
+			//////////////////////////
+
+			$("#user_btn").click(function(){
+				// alert(3);
+				$("#user_profile").attr('hidden',false);
+				$("#adventure_profile").attr('hidden',true);
+			});
+
+			$("#adventure_btn").click(function(){
+				// alert(4);
+				$("#user_profile").attr('hidden',true);
+				$("#adventure_profile").attr('hidden',false);
+			});
+
+			///////radar chart //////
+			new Chart(document.getElementById("myChart"), {
+			    type: 'radar',
+			    data: {
+			      labels: ["活動參與度", "任務參與度", "活動成功率", "任務成功率", "主動發起次數"],
+			      datasets: [
+			        {
+			          label: "能力值",
+			          fill: true,
+			          backgroundColor: "rgba(179,181,198,0.2)",
+			          borderColor: "rgba(179,181,198,1)",
+			          pointBorderColor: "#fff",
+			          // pointBackgroundColor: "rgba(179,181,198,1)",
+			          data: [21.77,25.61,21.69,26.62,30.82]
+			        }
+			      ]
+			    },
+			    options: {
+			      title: {
+			        // display: true,
+			        text: 'Distribution in % of world population'
+			      }
+			    }
+			});
+
+		</script>
+	</body>
+</html>
