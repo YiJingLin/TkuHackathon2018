@@ -46,6 +46,8 @@
               <h2>任務資訊</h2>
             </header>
             <p>發起人：陳小銘&nbsp;&nbsp;&nbsp;&nbsp;發起時間：2018/03/31</p>
+            <p>活動狀態：進行中</p>
+            <!-- 未開始/進行中/已完成 -->
           </section>
 
         <!-- Two -->
@@ -53,8 +55,22 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
+                  <label>Topic</label>
+                  <input type="text" name="topic" class="form-control border-input" placeholder="活動主題" value="淡江黑克松" readonly="readonly">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
                   <label>Address</label>
-                  <input type="text" name="address" class="form-control border-input" placeholder="活動地址" value="">
+                  <div class="input-group mb-3">
+                    <input type="text" name="address" class="form-control border-input" placeholder="活動地址" value="新北市淡水區英專路151號" readonly="readonly">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" disabled>Search on google map</button>
+                    </div>
+                  </div>
+                  <div>顯示 google map</div>
                 </div>
               </div>
             </div>
@@ -62,26 +78,52 @@
               <div class="col-md-12">
                 <div class="form-group">
                   <label>Discription</label>
-                  <textarea name="discription" class="form-control border-input" placeholder="活動描述" value=""></textarea>
+                  <textarea name="discription" class="form-control border-input" placeholder="活動描述" readonly="readonly">徵求黑克松組員一起來玩吧</textarea>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>Member count limit</label>
-                  <input type="number" name="memberLimit" class="form-control border-input" placeholder="參加人數上限" value="">
+                  <label>Date</label>
+                  <input type="date" name="missionDate" class="form-control border-input" placeholder="活動時間" value="2018-03-31" disabled>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>Reward</label>
-                  <input type="text" name="reward" class="form-control border-input" placeholder="約定報酬" value="">
+                  <label>Member count / Member limit</label>
+                  <input type="text" name="memberLimit" class="form-control border-input" placeholder="參加人數上限" value="3 / no limit" readonly="readonly">
                 </div>
               </div>
             </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>Reward</label>
+                  <input type="text" name="reward" class="form-control border-input" placeholder="約定報酬" value="星巴克一杯" readonly="readonly">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div id="file_add_area" class="col-md-12">
+                  <div class="form-group">
+                      <label>File</label>
+                      <button id="file_add" class="btn btn-outline-primary pull-right" href="#" disabled>新增檔案</button>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+                <div id="image_add_area" class="col-md-12">
+                    <div class="form-group">
+                        <label>Image</label>
+                        <button id="image_add" class="btn btn-outline-primary pull-right" href="#" disabled>新增相片</button>
+                    </div>
+                </div>
+            </div>
             <div class="text-center">
-              <a href="#" class="button">退出活動</a>
+              <a href="#" class="button">資料編輯</a>
+              <a href="#" class="button">取消編輯</a>
+              <a href="#" class="button">確認送出</a>
             </div>
           </section>
       </div>
@@ -93,6 +135,13 @@
       <script src="assets/js/util.js"></script>
       <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
       <script src="assets/js/main.js"></script>
+
+      <script type="text/javascript">
+        function enableList(){
+          $('')
+        }
+        function disableList(){}
+      </script>
 
   </body>
 </html>

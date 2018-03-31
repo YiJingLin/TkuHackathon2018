@@ -26,7 +26,6 @@
 
     <!-- popper.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
- 
     
   </head>
   <body id="top">
@@ -53,8 +52,22 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
+                  <label>Topic</label>
+                  <input type="text" name="topic" class="form-control border-input" placeholder="活動主題" value="">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
                   <label>Address</label>
-                  <input type="text" name="address" class="form-control border-input" placeholder="活動地址" value="">
+                  <div class="input-group mb-3">
+                    <input type="text" name="address" class="form-control border-input" placeholder="活動地址" value="">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button">Search on google map</button>
+                    </div>
+                  </div>
+                  <div>顯示 google map</div>
                 </div>
               </div>
             </div>
@@ -69,19 +82,44 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>Member count limit</label>
-                  <input type="number" name="memberLimit" class="form-control border-input" placeholder="參加人數上限" value="">
+                  <label>Date</label>
+                  <input type="date" name="missionDate" class="form-control border-input" placeholder="活動時間" value="">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>Reward</label>
-                  <input type="text" name="reward" class="form-control border-input" placeholder="約定報酬" value="">
+                  <label>Member limit (empty for no limit)</label>
+                  <input type="number" name="memberLimit" class="form-control border-input" placeholder="參加人數上限" value="">
                 </div>
               </div>
             </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>Reward</label>
+                  <input type="text" name="reward" class="form-control border-input" placeholder="約定報酬" value="星巴克一杯">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div id="file_add_area" class="col-md-12">
+                  <div class="form-group">
+                      <label>File</label>
+                      <button id="file_add" class="btn btn-outline-primary pull-right" href="#">新增檔案</button>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+                <div id="image_add_area" class="col-md-12">
+                    <div class="form-group">
+                        <label>Image</label>
+                        <button id="image_add" class="btn btn-outline-primary pull-right" href="#">新增相片</button>
+                    </div>
+                </div>
+            </div>
             <div class="text-center">
-              <a href="#" class="button">退出活動</a>
+              <a href="#" class="button">取消編輯</a>
+              <a href="#" class="button">確認送出</a>
             </div>
           </section>
       </div>
