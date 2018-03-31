@@ -31,12 +31,14 @@
   </head>
   <body id="top">
     <!-- Header -->
-    <div id="header"><script>$('#header').load('partial/header.html');</script></div>
+    <!-- <div id="header"><script>$('#header').load('partial/header.html');</script></div> -->
 
-    <!-- Sidebar -->
-      <div id="sidebar">
-        <script>$('#sidebar').load('partial/sidebar.html');</script>
-      </div>
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-xs-12">
+          <div id="sidebar"><script type="text/javascript">$("#sidebar").load("partial/sidebar.html")</script></div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-xs-12">
 
     <!-- Main -->
       <div id="main">
@@ -127,7 +129,10 @@
             </div>
           </section>
       </div>
-
+      
+        </div>
+      </div>
+    </div>
     <!-- Scripts -->
       <script src="assets/js/jquery.min.js"></script>
       <script src="assets/js/jquery.poptrox.min.js"></script>
@@ -135,6 +140,7 @@
       <script src="assets/js/util.js"></script>
       <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
       <script src="assets/js/main.js"></script>
+      <script src="assets/js/mission.js"></script>
 
       <script type="text/javascript">
         function enableList(){
