@@ -9,11 +9,27 @@
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/map.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div id="sidebar"><script type="text/javascript">$("#sidebar").load("partial/sidebar.html")</script></div>
-    <div id="map"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-xs-12">
+          <div id="sidebar"><script type="text/javascript">$("#sidebar").load("partial/sidebar.html")</script></div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-xs-12">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+
     <script src="assets/js/jquery.poptrox.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>

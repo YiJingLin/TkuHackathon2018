@@ -9,3 +9,6 @@ html, body {
   margin: 0;
   padding: 0;
 }
+.container-fluid , .row , .col-lg-9{
+	height: 100%;
+}
