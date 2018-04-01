@@ -155,8 +155,9 @@
                     </div>
                 </div>
                 <div class="text-center">
-                  <a href="#" class="button" onclick="history.back()">參加活動</a>
-                  <a href="#" class="button" style="display:none">退出活動</a>
+                  <!-- <a href="#" class="button" onclick="history.back()">參加活動</a> -->
+                  <a href="#" class="button" id="joinActivity_btn">參加活動</a>
+                  <a href="#" class="button" id="leaveActivity_btn" style="display:none">退出活動</a>
                   <a href="#" class="button" style="display:none">資料編輯</a>
                   <a href="#" class="button" style="display:none">取消編輯</a>
                   <a href="#" class="button" style="display:none">確認送出</a>
@@ -203,6 +204,18 @@
       <script type="text/javascript">
         function enableList(){}
         function disableList(){}
+
+        $("#joinActivity_btn").click(function(){
+          $(this).attr("style","display:none;");
+          $("#leaveActivity_btn").attr("style","");
+          alert("您已加入此活動");
+        });
+
+        $("#leaveActivity_btn").click(function(){
+          $(this).attr("style","display:none;");
+          $("#joinActivity_btn").attr("style","");
+          alert("您已離開此活動");
+        });
       </script>
 
   </body>
