@@ -33,7 +33,7 @@ function initMap() {
   var iconBase = 'https://maps.google.com/mapfiles/ms/micons/';
   var icons = {
     info: {
-      name: 'Mission',
+      name: '任務',
       icon: iconBase + 'info.png'
     }
   };
