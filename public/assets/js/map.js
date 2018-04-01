@@ -30,18 +30,26 @@ function initMap() {
     handleLocationError(false, infoWindow, map.getCenter());
   }
 
-  var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+  var iconBase = 'https://maps.google.com/mapfiles/ms/micons/';
   var icons = {
-    library: {
-      name: 'Library',
-      icon: iconBase + 'library_maps.png'
+    info: {
+      name: 'Mission',
+      icon: iconBase + 'info.png'
     }
   };
 
   var features = [
     {
-      position: new google.maps.LatLng(25.1753437, 121.4478139),
-      type: 'library' ,
+      position: new google.maps.LatLng(25.1746031, 121.4502626),
+      type: 'info' ,
+      click : alert 
+    },{
+      position: new google.maps.LatLng(25.1761895, 121.4504242),
+      type: 'info' ,
+      click : alert 
+    },{
+      position: new google.maps.LatLng(25.1784193, 121.4470315),
+      type: 'info' ,
       click : alert 
     }
   ];
