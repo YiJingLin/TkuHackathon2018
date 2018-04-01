@@ -59,7 +59,7 @@ function imageFileOnChange(input){
 
 function sendComment(){
     var message = '<div class="form-group">'+
-                    '<p class="category">神の領域 says:</p>'+
+                    '<p class="category">陳小銘 says:</p>'+
                     '<p class="description">'+$('#comment').val()+'</p>'+
                   '</div>';
     $('#messageBoard').append(message);
