@@ -3,8 +3,8 @@
   <head>
     <title>Geolocation</title>
     <meta charset="utf-8">
-      <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="assets/img/favicon.ico"/>
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -32,19 +32,22 @@
         background-repeat: no-repeat !important;
         background-position:left top !important;
       }
+      #logo_img{
+        height: 120% ;
+      }
     </style>
   </head>
   <body>
     <nav class="navbar navbar-default" style='margin-bottom: initial;border-radius:initial;'>
       <div class="container-fluid">
-        <div class="row">
+        <div class="row" style='margin-top: initial;'>
           <div class="col-lg-4">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#" style="padding-top: 0px;padding-bottom: 0px;"><h4>集會所</h4></a>
+              <a class="navbar-brand" href="#" style="padding-top: 0px;padding-bottom: 0px;"><img id='logo_img' src="assets/img/logo.png"></a>
             </div>
           </div>
           <div class="col-lg-3"></div>
-          <div class="col-lg-5">
+          <div class="col-lg-5" style="margin-top: 7px;">
             <ul class="nav navbar-nav">
               <li>
                 <input class="form-control" type="text" name="account" placeholder="Account">

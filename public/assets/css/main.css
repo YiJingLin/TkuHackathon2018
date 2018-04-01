@@ -8,6 +8,9 @@
 */
 
 /* Reset */
+	#logo_img{
+		height: 120% ;
+	}
 	body{
 		font-family: Microsoft JhengHei !important; 
 		position: relative !important;
