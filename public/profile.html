@@ -11,18 +11,25 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 
 	<body style="background-image: url('./assets/img/profile_bg.png');">
 
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<!--   Core JS Files   -->
+	    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	    <!-- popper.js -->
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 
+
+	    <!-- Header -->
+	    <div id="true-header"><script>$('#true-header').load('./partial/header.html');</script></div>
 
 	    <div class="container" style="height:1000px; width:70%; background-color: black; opacity: 0.5;">
 	    </div>
@@ -44,36 +51,37 @@
 
 					<div class="row">
 						<div class="col-md-3"></div>
-						<div class="col-md-3">
+						<div class="col-md-6">
 							<div class="btn-group" role="group" aria-label="Basic example" style="margin-top: 60px;width:100%">
 							  <button type="button" class="btn btn-secondary" id="user_btn">&nbsp;個人資訊&nbsp;</button>
 							  <button type="button" class="btn btn-secondary" id="adventure_btn">冒險者資訊</button>
 							</div>
+
 						</div>
 					</div>
 
 					<div id="user_profile" style="margin-top: 30px; padding:0px 10px 0px 10px;">
 						<form>
 						  <div class="form-group row">
-						    <label for="staticEmail" class="col-sm-2 col-form-label">信箱</label>
+						    <label for="staticEmail" class="col-sm-2 col-form-label">mail</label>
 						    <div class="col-sm-10">
 						      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="chen.wei-ming@nctu.edu.tw">
 						    </div>
 						  </div>
 						  <div class="form-group row">
-						    <label for="static mobile" class="col-sm-2 col-form-label">手機</label>
+						    <label for="static mobile" class="col-sm-2 col-form-label">mobile</label>
 						    <div class="col-sm-10">
 						      <input type="text" readonly class="form-control-plaintext" id="static mobile" value="0987-987-987">
 						    </div>
 						  </div>
 						  <div class="form-group row">
-						    <label for="static address" class="col-sm-2 col-form-label">密碼</label>
+						    <label for="static address" class="col-sm-2 col-form-label">address</label>
 						    <div class="col-sm-10">
 						      <input type="text" readonly class="form-control-plaintext" id="static address" value="新竹市東區大學路81巷3弄**號">
 						    </div>
 						  </div>
 						  <div class="form-group row">
-					    	<label for="static address" class="col-sm-12 col-form-label">自我介紹</label>
+					    	<label for="static address" class="col-sm-12 col-form-label">self-introduction</label>
 					    	<div class="col-sm-1"></div>
 						    <div class="col-sm-11">
 							  <textarea class="form-control" aria-label="With textarea" style="height:200px">大家豪，我是剛從新手村畢業的冒險者，請各位先進多多指教～姆咪。</textarea>
@@ -87,8 +95,8 @@
 							  <div class="col-md-1">
 							  	<img src="./assets/img/steak.svg" style="position: relative; top: -10px; width:30px; margin:0px 10px 0px 10px;">
 							  </div>
-							  <div class="col-md-3"><h5 style="position: relative; top: -5px; color: #4d4d4d;">&nbsp;&nbsp;&nbsp;經驗值</h5></div>
-							  <div class="col-md-7">
+							  <div class="col-md-2"><h5 style="position: relative; top: -10px; color: #4d4d4d;">&nbsp;&nbsp;&nbsp;Exp</h5></div>
+							  <div class="col-md-8">
 							  	<div class="progress">
 								  <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
 								</div>
@@ -104,8 +112,8 @@
 							  <div class="col-md-1">
 							  	<img src="./assets/img/money-bag.svg" style="position: relative; top: -10px; width:30px; margin:0px 10px 0px 10px;">
 							  </div>
-							  <div class="col-md-3"><h5 style="position: relative; top: -5px; color: #4d4d4d;">&nbsp;&nbsp;&nbsp;點數</h5></div>
-							  <div class="col-md-7">
+							  <div class="col-md-2"><h5 style="position: relative; top: -10px; color: #4d4d4d;">&nbsp;&nbsp;&nbsp;Point</h5></div>
+							  <div class="col-md-8">
 							  	<div class="progress">
 								  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
 								</div>
@@ -121,10 +129,218 @@
 							  	</div>
 							  	<div class="col-md-2"></div>
 						  </div>
+						  <div style="margin-bottom: 30px"></div>
+					</div>
+
+					<!--footer-->
+					<div class="row" id="footer" style="text-align: center;">
+						<div class="col-md-3"></div>
+						<div class="col-md-3">
+							<button type="button" class="btn btn-success" id="acitivity_list_btn">&nbsp;&nbsp;&nbsp;Activity&nbsp;&nbsp;&nbsp;</button>
+						</div>
+						<div class="col-md-3">
+							<button type="button" class="btn btn-success" id="equipment_list_btn">Equipment</button>
+						</div>
+						
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- Modal -->
+	    <div class="modal fade" id="activityModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	      <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	          <div class="modal-header">
+	          	<div class="row">
+	          		<div class="col-md-6">
+		            	<h3 class="modal-title" id="exampleModalLongTitle" style="font-style: bold">Acitivity</h3>
+		            </div>
+		            <div class="col-md-6">
+			            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			              <span aria-hidden="true">&times;</span>
+		            	</button>
+		            </div>
+	        	</div>
+	          </div>
+	          <div class="modal-body">
+	            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingOne">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          未開始
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				      <div class="panel-body">
+				        <div class="list-group">
+				        <a href="mission.html" class="list-group-item list-group-item-action">
+			                淡江黑克松
+			              </a>
+			              <a href="#!" class="list-group-item list-group-item-action">TKU Hackthon</a>
+			              <a href="#!" class="list-group-item list-group-item-action">TKU Hackthon NO.1</a>
+			              <a href="#!" class="list-group-item list-group-item-action">TKU Hackthon Saikō</a>
+			            </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingTwo">
+				      <h4 class="panel-title">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          進行中
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				      <div class="panel-body">
+				        <div class="list-group">
+				        	
+			              <a href="#!" class="list-group-item list-group-item-action">
+			                碩二順利畢業
+			              </a>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingThree">
+				      <h4 class="panel-title">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          已完成
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				      <div class="panel-body">
+				        <div class="list-group">
+			              <a href="#!" class="list-group-item list-group-item-action">TKU Hackthon 2017</a>
+			              <a href="#!" class="list-group-item list-group-item-action">扶老奶奶過馬路</a>
+			              <a href="#!" class="list-group-item list-group-item-action">TKU Hackthon Saikō</a>
+			            </div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+	          </div>
+	          <div class="modal-footer">
+	            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+
+	    <!-- Modal -->
+	    <div class="modal fade" id="equipmentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	      <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	          <div class="modal-header">
+	            <div class="row">
+	          		<div class="col-md-6">
+		            	<h3 class="modal-title" id="exampleModalLongTitle" style="font-style: bold">Equipment</h3>
+		            </div>
+		            <div class="col-md-6">
+			            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			              <span aria-hidden="true">&times;</span>
+		            	</button>
+		            </div>
+	        	</div>
+	          </div>
+	          <div class="modal-body">
+	            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingFour">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+				          武器
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+				      <div class="panel-body">
+				        <div class="list-group">
+				        <a href="mission.html" class="list-group-item list-group-item-action">
+			                銃槍
+			              </a>
+			              <a href="#!" class="list-group-item list-group-item-action">太刀</a>
+			              <a href="#!" class="list-group-item list-group-item-action">大劍</a>
+			            </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingFive">
+				      <h4 class="panel-title">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+				          防具
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+				      <div class="panel-body">
+				        <div class="list-group">
+				        	
+			              <a href="#!" class="list-group-item list-group-item-action">
+			                火龍頭飾
+			              </a>
+			              <a href="#!" class="list-group-item list-group-item-action">
+			                火龍胸甲
+			              </a>
+			              <a href="#!" class="list-group-item list-group-item-action">
+			                火龍腰飾
+			              </a>
+			              <a href="#!" class="list-group-item list-group-item-action">
+			                火龍腿甲
+			              </a>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingSix">
+				      <h4 class="panel-title">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+				          消耗
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+				      <div class="panel-body">
+				        <div class="list-group">
+			              <a href="#!" class="list-group-item list-group-item-action">
+			                大水
+			              </a>
+			              <a href="#!" class="list-group-item list-group-item-action">
+			                閃光彈
+			              </a>
+			              <a href="#!" class="list-group-item list-group-item-action">
+			                解毒劑
+			              </a>
+			              <a href="#!" class="list-group-item list-group-item-action">
+			                礪石
+			              </a>
+			            </div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+	          </div>
+	          <div class="modal-footer">
+	          	<div class="row">
+	          		<div class="col-md-2">
+	          			<button type="button" class="btn btn-light">Market</button>
+	          		</div>
+	          		<div class="col-md-8"></div>
+	          		<div class="col-md-2">
+	          			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	          		</div>
+	          	</div>
+	            
+	          </div>
+	        </div>
+	      </div>
+	    </div>
 		<script type="text/javascript">
 			var img_flag = true;
 
@@ -182,6 +398,15 @@
 			    }
 			});
 
+
+			// modal trigger
+			$("#acitivity_list_btn").click(function(){
+				$('#activityModal').modal('show') ;	
+			});
+			
+			$("#equipment_list_btn").click(function(){
+				$('#equipmentModal').modal('show') ;	
+			});
 		</script>
 	</body>
 </html>
