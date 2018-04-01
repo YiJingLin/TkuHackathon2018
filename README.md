@@ -1,7 +1,7 @@
-# TkuHackathon2018
+# GoeSo
+![logo](./public/assets/img/logo.png)
 
-Tamkang University Hackathon 2018 ([link](http://hacktku.org/2018/))
-
+> Tamkang University Hackathon 2018 ([link](http://hacktku.org/2018/)) \
 > April 1, 2018
 
 ## Collaborator:
@@ -9,10 +9,6 @@ Tamkang University Hackathon 2018 ([link](http://hacktku.org/2018/))
 Chen.Wei-Ming ( [link](https://github.com/Chen-Wei-Ming))
 Han.Cheng-Zhi ( [link](https://github.com/peter09830961))
 Lin. Yi-Jing ( [link](https://github.com/YiJingLin))
-
-
-# GoeSo
-![logo](./public/assets/img/logo.png)
 
 ## Idea
 1. 透過相互幫助或發起活動，建立或加強人與人之間的連結。
