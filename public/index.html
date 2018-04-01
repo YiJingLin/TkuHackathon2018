@@ -19,15 +19,22 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#">WebSiteName</a>
+              <a class="navbar-brand" href="#" style="padding-top: 0px;padding-bottom: 0px;"><h4>WebSiteName</h4></a>
             </div>
           </div>
           <div class="col-lg-3"></div>
           <div class="col-lg-5">
             <ul class="nav navbar-nav">
-              <li><input class="form-control" type="text" name="account" style='margin-top:5px ;' placeholder="Account"></li>
-              <li style="margin-left:10px;"><input class="form-control" type="text" name="password" style='margin-top:5px;' placeholder="Password"></li>
-              <li style="margin-left:10px;"><button class="btn btn-primary" href="homepage.html" style='margin-top:5px ; '>Log In</button></li>
+              <li>
+                <input class="form-control" type="text" name="account" placeholder="Account">
+              </li>
+              <li style="margin-left:10px;">
+                <input class="form-control" type="text" name="password" placeholder="Password">
+              </li>
+              <li style="margin-left:10px;">
+                <!-- <button class="btn btn-primary" href="homepage.html" style='margin-top:5px ; '>Log In</button> -->
+                <button class="form-control btn btn-primary" onclick="javascript:self.location.href='homepage.html'">Log In</button>
+              </li>
             </ul>
           </div>
         </div>
