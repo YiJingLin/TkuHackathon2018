@@ -9,39 +9,70 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-1"></div>
-			<div class="col-xs-4">姓名：陳小銘</div>
-			<div class="col-xs-6"></div>
+			<div class="col-xs-4">姓名：</div>
+			<div class="col-xs-6">陳小銘</div>
+			<div class="col-xs-1"></div>
+		</div>
+<!-- 		<div class="row">
+			<div class="col-xs-1"></div>
+			<div class="col-xs-4">年齡：</div>
+			<div class="col-xs-6">&nbsp;23</div>
 			<div class="col-xs-1"></div>
 		</div>
 		<div class="row">
 			<div class="col-xs-1"></div>
-			<div class="col-xs-4">年齡：23</div>
-			<div class="col-xs-6"></div>
+			<div class="col-xs-4">性別：</div>
+			<div class="col-xs-6">&nbsp;男</div>
+			<div class="col-xs-1"></div>
+		</div> -->
+		<div class="row">
+			<div class="col-xs-1"></div>
+			<div class="col-xs-4">點數：</div>
+			<div class="col-xs-6">45</div>
 			<div class="col-xs-1"></div>
 		</div>
 		<div class="row">
 			<div class="col-xs-1"></div>
-			<div class="col-xs-4">性別：男</div>
-			<div class="col-xs-6"></div>
+			<div class="col-xs-4">達成數：</div>
+			<div class="col-xs-6">43次</div>
 			<div class="col-xs-1"></div>
 		</div>
 		<div class="row">
 			<div class="col-xs-1"></div>
-			<div class="col-xs-4">點數：45</div>
-			<div class="col-xs-6"></div>
-			<div class="col-xs-1"></div>
+			<div class="col-xs-3">稱號：</div>
+			<div class="col-xs-8">解任務的冒險者</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-1"></div>
-			<div class="col-xs-4">經驗：87.75</div>
-			<div class="col-xs-6"></div>
-			<div class="col-xs-1"></div>
-		</div>
-		<div class="row">
-			<div class="col-xs-1"></div>
-			<div class="col-xs-4">稱號：解任務的冒險者</div>
-			<div class="col-xs-6"></div>
-			<div class="col-xs-1"></div>
+			<div class="col-md-12">
+				<canvas id="myChart" width="400" height="400"></canvas>
+			</div>
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	///////radar chart //////
+	new Chart(document.getElementById("myChart"), {
+	    type: 'radar',
+	    data: {
+	      labels: ["活動參與度", "任務參與度", "活動成功率", "任務成功率", "主動發起次數"],
+	      datasets: [
+	        {
+	          label: "能力值",
+	          fill: true,
+	          backgroundColor: "rgba(179,181,198,0.2)",
+	          borderColor: "rgba(179,181,198,1)",
+	          pointBorderColor: "#fff",
+	          // pointBackgroundColor: "rgba(179,181,198,1)",
+	          data: [21.77,25.61,21.69,26.62,30.82]
+	        }
+	      ]
+	    },
+	    options: {
+	      title: {
+	        // display: true,
+	        text: 'Distribution in % of world population'
+	      }
+	    }
+	});
+
+</script>
