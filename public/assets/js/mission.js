@@ -57,6 +57,15 @@ function imageFileOnChange(input){
     reader.readAsDataURL(input.files[0]);
 }
 
+function sendComment(){
+    var message = '<div class="form-group">'+
+                    '<p class="category">神の領域 says:</p>'+
+                    '<p class="description">'+$('#comment').val()+'</p>'+
+                  '</div>';
+    $('#messageBoard').append(message);
+    $('#comment').val("");
+}
+
 function initMap() {
     if($('input[name="address"]').val() != ""){
         marking();

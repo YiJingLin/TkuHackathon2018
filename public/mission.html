@@ -158,6 +158,29 @@
                   <a href="#" class="button" style="display:none">取消編輯</a>
                   <a href="#" class="button" style="display:none">確認送出</a>
                 </div>
+                <div class="row">
+                    <div class="col-md-12" id="messageBoard">
+                      <hr>
+                      <div class="form-group">
+                          <label>
+                              <h3 class="title">留言板</h3>
+                          </label>
+                      </div>
+                      <hr>
+                      <div class="form-group">
+                          <p class="category">Peter says:</p>
+                          <p class="description">求抱大腿</p>
+                      </div>
+                      <div class="form-group">
+                          <p class="category">John says:</p>
+                          <p class="description">老司機帶帶我</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-10"><input type="text" id="comment" class="form-control border-input"></div>
+                  <div class="col-md-2"><button class="btn btn-defult" onclick="sendComment()">送出</button></div>
+                </div>
               </section>
           </div>
         </div>
@@ -175,9 +198,7 @@
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZcwhzVh5o0xJZMvoH2Ynmzobf1-PJlWg&callback=initMap"></script>
 
       <script type="text/javascript">
-        function enableList(){
-          $('')
-        }
+        function enableList(){}
         function disableList(){}
       </script>
 
